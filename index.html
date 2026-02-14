@@ -17,39 +17,24 @@
             margin: 0;
             overflow: hidden;
         }
-        .slide-enter {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        .slide-enter-active {
-            opacity: 1;
-            transform: translateX(0);
-            transition: opacity 500ms, transform 500ms;
-        }
-        .slide-exit {
-            opacity: 1;
-            transform: translateX(0);
-        }
-        .slide-exit-active {
-            opacity: 0;
-            transform: translateX(-50px);
-            transition: opacity 500ms, transform 500ms;
-        }
     </style>
 <script type="importmap">
 {
   "imports": {
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0",
     "react/": "https://esm.sh/react@^19.2.4/",
     "react": "https://esm.sh/react@^19.2.4",
-    "recharts": "https://esm.sh/recharts@^3.7.0"
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0"
   }
 }
 </script>
 </head>
 <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
